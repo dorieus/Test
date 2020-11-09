@@ -17,28 +17,34 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 0px 20px;
 }
+
 .menu-main {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .menu-main:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .left-item {
   float: left;
 }
+
 .right-item {
   float: right;
 }
+
 .navbar-logo {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .menu-main a {
   text-decoration: none;
   display: block;
@@ -49,6 +55,7 @@ header {
   color: black;
   transition: 0.3s linear;
 }
+
 .menu-main a:hover {
   background: white;
 }
@@ -75,46 +82,31 @@ button {
   margin-left: 20px;
 }
 
-.but {
+button {
   background-color: white;
 }
 
-.but:hover {
+div:nth-child(1) button:hover {
   background-color: black;
   color: white;
   transform: skew(-10deg);
 }
 
-.but-two {
-  background-color: white;
-}
-
-.but-two:hover {
+div:nth-child(2) button:hover {
   height: 80px;
   background-color: blueviolet;
 }
 
-.but-three {
-  background-color: white;
-}
-.but-three:hover {
+div:nth-child(3) button:hover {
   background-color: black;
   color: white;
 }
 
-.but-four {
-  background-color: white;
-}
-
-.but-four:hover {
+div:nth-child(4) button:hover {
   visibility: hidden;
 }
 
-.but-five {
-  background-color: white;
-}
-
-.but-five:hover {
+div:nth-child(5) button:hover {
   background-color: red;
 }
 
@@ -130,35 +122,27 @@ button {
   height: 300px;
   border: solid;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 .div-elem {
+  display: inline-block;
   background-color: white;
-  width: 60px;
-  height: 20px;
   border: solid;
   border-color: red;
 }
 
-.div-elem_two {
-  background-color: white;
+.div-elem:nth-child(2) {
   width: 100%;
-  height: 20px;
-  border: solid;
-  border-color: red;
 }
 
-.div-elem_three {
-  background-color: white;
-  width: 60px;
+.div-elem:nth-child(3) {
   height: 100%;
-  border: solid;
-  border-color: red;
 }
 
 /* block 3 styles*/
 
-/*.block-three {
+.block-three {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,6 +151,7 @@ button {
   width: 100%;
   height: 300px;
   border: solid;
+  margin-bottom: 20px;
 }
 
 .div-one {
@@ -175,23 +160,29 @@ button {
   background-color: black;
   margin-bottom: 20px;
 }
-*/
+
+/* block 4 styles*/
 
 .block-four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rebeccapurple;
   width: 100%;
   height: 300px;
   border: solid;
+  margin-bottom: 20px;
 }
 
 .div-two {
-  position: relative;
+  display: inline-block;
   top: 50%;
   left: 50%;
   width: 50px;
   height: 50px;
   background-color: black;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 768px) {
